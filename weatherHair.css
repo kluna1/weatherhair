@@ -7,6 +7,11 @@ body {
   margin: 0;
 }
 
+
+.products{
+  display: none;
+}
+
 .no-scroll{
   overflow: hidden;
 }

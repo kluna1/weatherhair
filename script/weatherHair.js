@@ -65,12 +65,14 @@ $('.modal').click(function(event) {
 function getWeather(longitude, latitude) {
 	$.getJSON('http://api.openweathermap.org/data/2.5/weather?', 
 
+
+
+
 {
 	appid: 'aff355c705b85b8e1006f1675be9eabc',
 	lon: longitude,
 	lat: latitude,
 	units: 'imperial',
-
 
 
 
@@ -109,10 +111,15 @@ function(data) {
 
 }
 
+  
+
 
 // Use data, determine weather type
 function getWeatherType(data) {
 	// If statements - see https://openweathermap.org/weather-conditions
+console.log(data.weather[0].main)
+
+$("." + weatherType).show();
 
 }
 
